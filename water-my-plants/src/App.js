@@ -13,7 +13,7 @@ function App(props) {
 
   return (
     <div className="App">
-      <h1>Add A New Plant Form</h1>
+      <h1>Add A New Plant</h1>
       <NewPlant/>
     </div>
   );
