@@ -34,7 +34,7 @@ const LoginForm = () => {
           placeholder="Password"
           onChange={onInputChange}
         />
-        <button onClick={formSubmit}></button>
+        <button onClick={formSubmit}>Login</button>
       </form>
     </div>
   );
