@@ -1,21 +1,23 @@
 import './App.css';
-import NewPlant from './Components/plantForm'; 
 import { connect } from 'react-redux'
 import { searchAPI } from './state/actions';
 import { useEffect } from 'react'
+import logo from './images/logo.png';
+
+import Styled from './styles/index';
 
 function App(props) {
-  console.log(props);
 
-  useEffect(() => {
-    props.searchAPI();
-  }, [])
+  // useEffect(() => {
+  //   props.searchAPI();
+  // }, [])
 
   return (
-    <div className="App">
-      <h1>Add A New Plant</h1>
-      <NewPlant/>
-    </div>
+    <Styled>
+      <div className="App">
+        <img src={logo} />
+      </div>
+    </Styled>
   );
 }
 

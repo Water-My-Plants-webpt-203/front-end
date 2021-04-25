@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { connect } from 'react-redux';
 import { searchAPI } from '../state/actions'
 
-const NewPlant = (props) => {
+const PlantForm = (props) => {
     const [ form, setForm ] = useState('');
 
     const handleChange = (e) => {
@@ -49,4 +49,4 @@ const NewPlant = (props) => {
     )
 }
 
-export default connect(null, { searchAPI })(NewPlant);
+export default connect(null, { searchAPI })(PlantForm);
