@@ -4,7 +4,8 @@ import { connect } from "react-redux";
 import { searchAPI } from "./state/actions";
 import { useEffect } from "react";
 import LoginForm from "./Components/LoginForm";
-import PlantGallery from "./Components/PlantGallery";
+// import SignupForm from './Components/SignupForm'
+// import PlantGallery from "./Components/PlantGallery";
 
 function App(props) {
   console.log(props);
@@ -18,7 +19,8 @@ function App(props) {
       <div className="App">
         {/* move NewPlant to PlantGallery */}
         <Route exact path="/" component={LoginForm} />
-        <Route path="/plants" component={PlantGallery} />
+        {/* <Route exact path="/signup" component={SignupForm} /> */}
+        {/* <Route path="/plants" component={PlantGallery} /> */}
       </div>
     </Router>
   );
