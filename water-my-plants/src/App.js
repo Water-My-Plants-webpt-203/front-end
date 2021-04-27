@@ -5,7 +5,7 @@ import { searchAPI } from "./state/actions";
 import { useEffect } from "react";
 import LoginForm from "./Components/LoginForm";
 // import SignupForm from './Components/SignupForm'
-// import PlantGallery from "./Components/PlantGallery";
+import PlantGallery from "./Components/PlantGallery";
 
 function App(props) {
   console.log(props);
@@ -20,7 +20,7 @@ function App(props) {
         {/* move NewPlant to PlantGallery */}
         <Route exact path="/" component={LoginForm} />
         {/* <Route exact path="/signup" component={SignupForm} /> */}
-        {/* <Route path="/plants" component={PlantGallery} /> */}
+        <Route path="/plants" component={PlantGallery} />
       </div>
     </Router>
   );

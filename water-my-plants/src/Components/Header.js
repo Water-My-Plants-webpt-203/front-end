@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import * as style from "./styledcomp";
+import * as style from "./StyledComponents";
 
 const Header = (props) => {
   //modal state
