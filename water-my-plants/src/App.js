@@ -8,8 +8,8 @@ import LoginForm from "./Components/LoginForm";
 // import PlantGallery from "./Components/PlantGallery";
 
 function App(props) {
-  console.log(props);
-
+	console.log(props);
+  
   useEffect(() => {
     props.searchAPI();
   }, []);
