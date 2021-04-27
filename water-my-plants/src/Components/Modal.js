@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import * as style from "./StyledComponents";
 
 const Modal = (props) => {
   const { showModal, setShowModal } = props;
@@ -17,20 +18,22 @@ const Modal = (props) => {
       <div>
         {/* modal will only render conditionally */}
         {showModal ? (
-          <div>
-            <div>
-              {/* add/edit plant form component */}
-              <h2>add/edit plant form</h2>
-            </div>
-            <div>
-              {/* user change password form component */}
-              <h2>user settings/password update</h2>
-            </div>
-            <button
-              aria-label="Close Button"
-              onClick={setShowModal(!showModal)}
-            />
-          </div>
+          <style.ModalPanel>
+            <style.ModalWrapper>
+              <style.ModalContent>
+                {/* add/edit plant form component */}
+                <h2>add/edit plant form</h2>
+              </style.ModalContent>
+              <style.ModalContent>
+                {/* user change password form component */}
+                <h2>user settings/password update</h2>
+              </style.ModalContent>
+              <button
+                aria-label="Close Button"
+                onClick={setShowModal(!showModal)}
+              />
+            </style.ModalWrapper>
+          </style.ModalPanel>
         ) : null}
         {/* end modal */}
       </div>
