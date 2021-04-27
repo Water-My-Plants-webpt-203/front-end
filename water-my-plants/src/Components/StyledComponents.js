@@ -61,3 +61,38 @@ export const ModalContent = styled.div`
   line-height: 1.8;
   color: #141414;
 `;
+
+export const CloseModalBtn = styled(MdClose)`
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  z-index: 10;
+`;
+
+export const LogoutBtn = styled.button`
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 1rem;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 auto;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: #49fcd4;
+  color: #333;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1rem;
+  text-align: center;
+
+  &:hover {
+    background: #333;
+    color: #49fcd4;
+  }
+`;

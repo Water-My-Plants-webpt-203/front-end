@@ -28,10 +28,11 @@ const Modal = (props) => {
                 {/* user change password form component */}
                 <h2>user settings/password update</h2>
               </style.ModalContent>
-              <button
+              <style.CloseModalBtn
                 aria-label="Close Button"
                 onClick={setShowModal(!showModal)}
               />
+              <style.LogoutBtn onClick={intiateLogout}>Log Out</style.LogoutBtn>
             </style.ModalWrapper>
           </style.ModalPanel>
         ) : null}
