@@ -11,7 +11,7 @@ const Header = (props) => {
 
   return (
     <>
-      <div>
+      <style.Container>
         <h1>Water My Plants</h1>
         <style.SettingsIcon onClick={toggleModal} aria-label="Settings Icon" />
         {/* <Modal
@@ -20,7 +20,9 @@ const Header = (props) => {
           showModal={showModal}
           setShowModal={setShowModal}
         /> */}
-      </div>
+
+      </style.Container>
+      <style.LineBreak />
     </>
   );
 };
