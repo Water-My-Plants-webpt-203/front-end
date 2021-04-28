@@ -1,23 +1,40 @@
 import React from 'react'
-import { PlantForm } from './plantForm'; 
-import { Link, Route } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux';
+
 
 const PlantGallery = () => {
     return (
-        <div className='container'>
-            <div className='links'>
+        <div className='gallery-container'>
+            <div className='header'>
                 <h1>Plant Gallery</h1>
                 <Link to='/plantForm'>
-                    Add/Edit
+                    <button>Add/Edit</button>
                 </Link>
             </div>
-            <div className='routes'>
-                <Route path='/plantForm'>
-                    <PlantForm/>
-                </Route>    
+            <div className="boxes-container">
+                <div className='boxes'>
+                    <div className='content'>
+                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
+                        <h1>Bonny</h1>
+                    </div>
+                </div>
+                <div className='boxes'>
+                    <div className='content'>
+                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
+                        <h1>Bonny</h1>
+                    </div>    
+                </div>
+                <div className='boxes'>
+                    <div className='content'>
+                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
+                        <h1>Bonny</h1>
+                    </div>    
+                </div>
             </div>
         </div>
     )
 }
 
-export default PlantGallery;
+export default connect()(PlantGallery);
+

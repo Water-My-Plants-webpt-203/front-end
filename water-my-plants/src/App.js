@@ -1,30 +1,32 @@
 import './App.css';
-import { connect } from 'react-redux'
-import { searchAPI } from './state/actions';
-import { useEffect } from 'react'
-import logo from './images/logo.png';
-
+import { Route, Switch } from 'react-router-dom';
 import Styled from './styles/index';
+import Home from './Components/home';
+import PlantGallery from './Components/plantGallery';
+import PlantForm from './Components/plantForm'
 
-function App(props) {
-
-  // useEffect(() => {
-  //   props.searchAPI();
-  // }, [])
+function App() {
 
   return (
     <Styled>
       <div className="App">
-        <img src={logo} />
+        
+        <div className="routes">
+          <Switch> 
+            <Route exact path='/'>
+              <Home/>
+            </Route>  
+            <Route path='/plants'>
+              <PlantGallery />
+            </Route>
+            <Route path='/plantForm'>
+              <PlantForm/>
+            </Route> 
+          </Switch>
+        </div>
       </div>
     </Styled>
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    state: state,
-  }
-}
-
-export default connect(mapStateToProps, {searchAPI})(App);
+export default App;
