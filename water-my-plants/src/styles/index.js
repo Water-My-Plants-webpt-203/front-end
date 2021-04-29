@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import plant from '../images/plants.jpg'
 
 const Styled = styled.div `
     .gallery-container {
@@ -20,17 +21,16 @@ const Styled = styled.div `
        }
 
        button {
-           margin-top: 1em;
-           margin-right: 3em;
-           font-size: 17px;
-           padding-left: 20%;
-           padding-right: 20%;
+           margin-top: 7%;
+           font-size: 20px;
+           padding-right: 14px;
+           padding-left: 14px;
            padding-top: 10%;
            padding-bottom: 10%;
            background-color: #88B66F;
            color: white;
            border: 1px solid #88B66F;
-           border-radius: 20px;
+           border-radius: 8px 30px 8px 30px;
        }
 
        .boxes-container {
@@ -68,9 +68,9 @@ const Styled = styled.div `
         height: 100vh;
 
         img {
-            width: 600px;
-            height: 600px;
-            margin-top: 10%; 
+            width: 500px;
+            height: 500px;
+            margin-top: 8%; 
             border-radius: 50%;
         
             @media (max-width: 1600px) {
@@ -98,10 +98,33 @@ const Styled = styled.div `
             }   
         
             @media (max-width: 600px) {
-                width: 400px;
-                height: 400px;
+                width: 350px;
+                height: 350px;
                 margin-top: 40%;
             } 
+        }
+
+        .buttons {
+            margin-top: 5%;
+            display: flex;
+            flex-flow: row-nowrap;
+            justify-content: space-evenly;
+            padding-left: 15vw;
+            padding-right: 15vw;
+
+            button {
+                font-size: 25px;
+                letter-spacing: 2px;
+                padding-left: 5vw;
+                padding-right: 5vw;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background-color: black;
+                color: white;
+                border: 1px solid black;
+                border-radius: 20px;
+                cursor: pointer;
+            }
         }
     }
 
@@ -116,7 +139,6 @@ const Styled = styled.div `
             flex-direction: row;
             justify-content: space-between;
             border-bottom: 2px solid lightgrey;
-            
 
             img {
                 width: 100px;
@@ -128,9 +150,24 @@ const Styled = styled.div `
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
+            margin-top: 5%;
+            margin-right: 15%;
+            margin-left: 15%;
 
+            
+         
             label {
-                margin: 2%;
+                margin: 3%;
+            }
+
+            .text {
+                width: 50%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                text-align: center;
+                font-size: 20px;
+                letter-spacing: 5px;
+                border: 2px solid lightgrey;
             }
 
             .button-container { 
@@ -145,16 +182,14 @@ const Styled = styled.div `
                     padding-left: 5%;
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    background-color: black;
-                    color: white;
-                    border: 1px solid #88B66F;
+                    background-color: #5DC8E9;
+                    color: whitesmoke;
+                    border: 1px solid #5DC8E9;
                     border-radius: 20px;
-                    font-size: 27px;
+                    font-size: 22px;
                 }
             }    
         }
     }
 `
-
-
 export default Styled;

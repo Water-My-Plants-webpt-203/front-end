@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { searchAPI } from '../state/actions'
 import logo from '../images/logo.png';
 
+
 const PlantForm = (props) => {
     const [ form, setForm ] = useState('');
 
@@ -18,28 +19,31 @@ const PlantForm = (props) => {
     return (
         <div className='form-container'>
             <div className='header'>
-                <h1>New plant friend</h1>
+                <h1>New plant</h1>
                 <img src={logo} />
             </div>
+
             <form onSubmit={handleSubmit} className="plantForm">
                <label>
-                    <h3>Nickname</h3>
-                    <input
+                    <input 
+                        className='text'
                         type='text'
                         name='nickname'
+                        placeholder='NICKNAME'
                         onChange={handleChange}
                         value={form}
                     />
                 </label> 
                 <label> 
-                    <h3>Species</h3>
                     <input
+                        className='text'
                         type='text'
                         name='species'
+                        placeholder='SPECIES'
                     />
                 </label>
                 <label> 
-                    <h3>H2O Frequency</h3>
+                    <h2>H2O Frequency</h2>
                     <input
                         type='range'
                         name='frequency'

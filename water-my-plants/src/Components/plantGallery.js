@@ -7,9 +7,9 @@ const PlantGallery = () => {
     return (
         <div className='gallery-container'>
             <div className='header'>
-                <h1>Plant Gallery</h1>
+                <h1>My Plant Gallery</h1>
                 <Link to='/plantForm'>
-                    <button>Add/Edit</button>
+                    <button>Add Plant</button>
                 </Link>
             </div>
             <div className="boxes-container">
