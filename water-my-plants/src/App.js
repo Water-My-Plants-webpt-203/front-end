@@ -1,35 +1,40 @@
-import "./App.css";
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import { connect } from "react-redux";
-import { searchAPI } from "./state/actions";
-import { useEffect } from "react";
+import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Styled from './styles/index';
+import Home from './Components/home';
+import PlantGallery from './Components/plantGallery';
+import PlantForm from './Components/plantForm'
 import LoginForm from "./Components/LoginForm";
 // import SignupForm from './Components/SignupForm'
-// import PlantGallery from "./Components/PlantGallery";
 
-function App(props) {
-	console.log(props);
-  
-  useEffect(() => {
-    props.searchAPI();
-  }, []);
+
+function App() {
 
   return (
-    <Router>
+    <Styled>
       <div className="App">
-        {/* move NewPlant to PlantGallery */}
-        <Route exact path="/" component={LoginForm} />
+        <div className="routes">
+          <Switch> 
+            <Route exact path='/'>
+              <Home/>
+            </Route>
+            <Route path='/login'>
+              <LoginForm />  
+            </Route>  
+            <Route path='/plants'>
+              <PlantGallery />
+            </Route>
+            <Route path='/plantForm'>
+              <PlantForm/>
+            </Route> 
+          </Switch>
+        </div>
         {/* <Route exact path="/signup" component={SignupForm} /> */}
-        {/* <Route path="/plants" component={PlantGallery} /> */}
+
       </div>
-    </Router>
+    </Styled>
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    state: state,
-  };
-};
+export default App;
 
-export default connect(mapStateToProps, { searchAPI })(App);
