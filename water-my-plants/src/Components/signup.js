@@ -98,9 +98,7 @@ export default function Login() {
 									type="text"
 								></Input>
 							</label>
-							<label>
-								<Input placeholder="Email" type="email"></Input>
-							</label>
+
 							<label>
 								<Input
 									placeholder="Password"
