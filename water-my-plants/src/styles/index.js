@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import plant from '../images/plants.jpg'
 
 const Styled = styled.div `
     .gallery-container {

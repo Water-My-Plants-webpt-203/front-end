@@ -5,7 +5,7 @@ import Home from './Components/home';
 import PlantGallery from './Components/plantGallery';
 import PlantForm from './Components/plantForm'
 import LoginForm from "./Components/LoginForm";
-// import SignupForm from './Components/SignupForm'
+import Login from './Components/signup';
 
 
 function App() {
@@ -21,6 +21,9 @@ function App() {
             <Route path='/login'>
               <LoginForm />  
             </Route>  
+            <Route path='/signup'>
+              <Login />
+            </Route>
             <Route path='/plants'>
               <PlantGallery />
             </Route>
