@@ -98,7 +98,6 @@ export default function Login() {
 									type="text"
 								></Input>
 							</label>
-
 							<label>
 								<Input
 									placeholder="Password"
