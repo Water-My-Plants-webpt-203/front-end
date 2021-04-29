@@ -7,7 +7,6 @@ import PlantForm from './Components/plantForm'
 import LoginForm from "./Components/LoginForm";
 // import SignupForm from './Components/SignupForm'
 
-
 function App() {
 
   return (
@@ -30,7 +29,6 @@ function App() {
           </Switch>
         </div>
         {/* <Route exact path="/signup" component={SignupForm} /> */}
-
       </div>
     </Styled>
   );
