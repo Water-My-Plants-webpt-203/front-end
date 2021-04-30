@@ -74,7 +74,7 @@ export default function Login() {
 										textDecoration: "none",
 										color: "#00c853",
 									}}
-									to="/sign"
+									to="/signup"
 								>
 									Create Profile
 								</Link>
