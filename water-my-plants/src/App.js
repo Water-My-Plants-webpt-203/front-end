@@ -2,7 +2,7 @@ import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import Styled from "./styles/index";
 import Home from "./Components/Home";
-import PlantGallery from "./Components/plantGallery";
+import PlantGallery from "./Components/PlantGallery";
 import PlantForm from "./Components/PlantForm";
 import Login from "./Components/Login";
 import Signup from "./Components/Signup";
