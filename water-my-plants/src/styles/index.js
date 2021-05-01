@@ -13,9 +13,17 @@ const Styled = styled.div `
            justify-content: space-between;
            border-bottom: 2px solid lightgrey;
 
+           span {
+               color: #69A352;
+           }
+
            h1 {
                font-family: Palatino, serif;
-               color: #88B66F;
+               color: black;
+
+               @media (max-width: 415px) {
+                   font-size: 20px;
+               }
            }
        }
 
@@ -30,6 +38,15 @@ const Styled = styled.div `
            color: white;
            border: 1px solid #88B66F;
            border-radius: 8px 30px 8px 30px;
+
+           @media (max-width: 415px) {
+               font-size: 10px;
+               margin-top: 10%;
+               padding-right: 8px;
+               padding-left: 8px;
+               padding-top: 5%;
+               padding-bottom: 5%;
+           }
        }
 
        .boxes-container {
@@ -133,7 +150,7 @@ const Styled = styled.div `
         
         .header {
             font-family: Palatino, serif;
-            color: #88B66F;
+            color: black;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -142,6 +159,10 @@ const Styled = styled.div `
             img {
                 width: 100px;
                 height: 90px;
+            }
+
+            span {
+                color: #69A352;
             }
         }
 
@@ -152,21 +173,35 @@ const Styled = styled.div `
             margin-top: 5%;
             margin-right: 15%;
             margin-left: 15%;
-
+            padding-bottom: 2%;
+            border: 2px solid lightgrey;
             
          
             label {
-                margin: 3%;
+                margin: 2%;
+               
+                h2 {
+                    font-size: 20px; 
+                    color: #28B6E2;
+
+                    @media (max-width: 415px) {
+                        font-size: 17px;
+                    }
+                }
             }
+            
 
             .text {
-                width: 50%;
-                padding-top: 1%;
-                padding-bottom: 1%;
                 text-align: center;
                 font-size: 20px;
                 letter-spacing: 5px;
-                border: 2px solid lightgrey;
+                border: none;
+	            border-bottom: 1px solid #757575;
+	            background-color: transparent;
+
+                @media (max-width: 415px) {
+                    font-size: 15px;
+                }
             }
 
             .button-container { 
@@ -181,9 +216,9 @@ const Styled = styled.div `
                     padding-left: 5%;
                     padding-top: 10px;
                     padding-bottom: 10px;
-                    background-color: #5DC8E9;
+                    background-color: black;
                     color: whitesmoke;
-                    border: 1px solid #5DC8E9;
+                    border: 1px solid black;
                     border-radius: 20px;
                     font-size: 22px;
                 }

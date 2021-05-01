@@ -46,7 +46,7 @@ const Input = styled.input`
 	}
 `;
 
-export default function Login() {
+export default function Signup() {
 	return (
 		<>
 			<Container>
@@ -74,7 +74,7 @@ export default function Login() {
 										textDecoration: "none",
 										color: "#00c853",
 									}}
-									to="/"
+									to="/login"
 								>
 									Sign in
 								</Link>

@@ -4,8 +4,8 @@ import Styled from './styles/index';
 import Home from './Components/home';
 import PlantGallery from './Components/plantGallery';
 import PlantForm from './Components/plantForm'
-import LoginForm from "./Components/LoginForm";
-import Login from './Components/signup';
+import Login from './Components/login';
+import Signup from './Components/signup';
 
 
 function App() {
@@ -19,10 +19,10 @@ function App() {
               <Home/>
             </Route>
             <Route path='/login'>
-              <LoginForm />  
+              <Login />  
             </Route>  
             <Route path='/signup'>
-              <Login />
+              <Signup />
             </Route>
             <Route path='/plants'>
               <PlantGallery />

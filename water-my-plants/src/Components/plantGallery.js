@@ -7,31 +7,17 @@ const PlantGallery = () => {
     return (
         <div className='gallery-container'>
             <div className='header'>
-                <h1>My Plant Gallery</h1>
-                <Link to='/plantForm'>
-                    <button>Add Plant</button>
-                </Link>
+                <h1><span>Plant</span> Gallery</h1>
+                <nav>
+                    <Link to='/plantForm'>
+                        <button>Add Plant</button>
+                    </Link>
+                    <Link to='/plantForm'>
+                        <button>Edit Plant</button>
+                    </Link>
+                </nav>
             </div>
-            <div className="boxes-container">
-                <div className='boxes'>
-                    <div className='content'>
-                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
-                        <h1>Bonny</h1>
-                    </div>
-                </div>
-                <div className='boxes'>
-                    <div className='content'>
-                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
-                        <h1>Bonny</h1>
-                    </div>    
-                </div>
-                <div className='boxes'>
-                    <div className='content'>
-                        <img src='https://www.wagnergreenhouses.com/wp-content/uploads/2018/04/bonsai.jpg' />
-                        <h1>Bonny</h1>
-                    </div>    
-                </div>
-            </div>
+            
         </div>
     )
 }
