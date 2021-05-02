@@ -1,25 +1,29 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux';
-import { searchAPI } from '../state/actions'
+
+import { searchAPI } from '../actions';
 import logo from '../images/logo.png';
 
 
 const PlantForm = (props) => {
     const [ form, setForm ] = useState('');
-
-    const handleChange = (e) => {
-        setForm(e.target.value)
-    }
+    const [ nickName, setNickName ] = useState('');
+    const [ species, setSpecies ] = useState('');
+    const [ frequency, setFrequency ] = useState('')
+    const [ image, setImage ] = useState('');
+    
 
     const handleSubmit = (e) => {
         e.preventDefault()
-        props.searchAPI(form)
+        const newPlant = { nickName, species, frequency, image } ;
+        // props.searchAPI(form)
+        console.log(newPlant)
     }
 
     return (
         <div className='form-container'>
             <div className='header'>
-                <h1>New plant</h1>
+                <h1>Add A New <span>plant</span></h1>
                 <img src={logo} />
             </div>
 
@@ -27,33 +31,40 @@ const PlantForm = (props) => {
                <label>
                     <input 
                         className='text'
-                        type='text'
                         name='nickname'
                         placeholder='NICKNAME'
-                        onChange={handleChange}
-                        value={form}
+                        type='text'
+                        value={nickName}
+                        onChange={(e) => setNickName(e.target.value)}
                     />
                 </label> 
                 <label> 
                     <input
                         className='text'
-                        type='text'
                         name='species'
                         placeholder='SPECIES'
+                        type='text'
+                        value={species}
+                        onChange={(e) => setSpecies(e.target.value)}
                     />
                 </label>
                 <label> 
-                    <h2>H2O Frequency</h2>
                     <input
-                        type='range'
+                        className='text'
                         name='frequency'
+                        placeholder='H2O Frequency'
+                        type='text'
+                        value={frequency}
+                        onChange={(e) => setFrequency(e.target.value)}
                     />
                 </label>
                 <label> 
                     <h3>Add Image</h3>
                     <input
-                        type='file'
                         name='image'
+                        type='file'
+                        value={image}
+                        onChange={(e) => setImage(e.target.value)}
                     />
                 </label>
                 <div className='button-container'>

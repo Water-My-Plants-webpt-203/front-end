@@ -1,11 +1,12 @@
-import "./App.css";
-import { Route, Switch } from "react-router-dom";
-import Styled from "./styles/index";
-import Home from "./Components/Home";
-import PlantGallery from "./Components/plantGallery";
-import PlantForm from "./Components/PlantForm";
-import Login from "./Components/Login";
-import Signup from "./Components/Signup";
+import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import Styled from './styles/index';
+import Home from './Components/home';
+import PlantGallery from './Components/plantGallery';
+import PlantForm from './Components/plantForm'
+import Login from './Components/login';
+import Signup from './Components/signup';
+
 
 
 function App() {
@@ -31,7 +32,6 @@ function App() {
             </Route>
           </Switch>
         </div>
-        {/* <Route exact path="/signup" component={SignupForm} /> */}
       </div>
     </Styled>
   );

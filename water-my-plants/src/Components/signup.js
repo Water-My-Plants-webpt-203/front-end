@@ -46,7 +46,7 @@ const Input = styled.input`
 	}
 `;
 
-export default function Login() {
+export default function Signup() {
 	return (
 		<>
 			<Container>
