@@ -8,36 +8,33 @@ import Login from './Components/login';
 import Signup from './Components/signup';
 
 
-function App() {
 
+function App() {
   return (
     <Styled>
       <div className="App">
         <div className="routes">
-          <Switch> 
-            <Route exact path='/'>
-              <Home/>
+          <Switch>
+            <Route exact path="/">
+              <Home />
             </Route>
-            <Route path='/login'>
-              <Login />  
-            </Route>  
-            <Route path='/signup'>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/signup">
               <Signup />
             </Route>
-            <Route path='/plants'>
+            <Route path="/plants">
               <PlantGallery />
             </Route>
-            <Route path='/plantForm'>
-              <PlantForm/>
-            </Route> 
+            <Route path="/plantForm">
+              <PlantForm />
+            </Route>
           </Switch>
         </div>
-        {/* <Route exact path="/signup" component={SignupForm} /> */}
-
       </div>
     </Styled>
   );
 }
 
 export default App;
-

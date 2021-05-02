@@ -99,9 +99,6 @@ export default function Signup() {
 								></Input>
 							</label>
 							<label>
-								<Input placeholder="Email" type="email"></Input>
-							</label>
-							<label>
 								<Input
 									placeholder="Password"
 									type="password"
